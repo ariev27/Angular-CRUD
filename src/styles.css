@@ -1,0 +1,28 @@
+body {
+    background: url("https://forums.macrumors.com/attachments/macos-sierra-wallpaper-macbook-wallpaperblur2-jpg.639485/") no-repeat fixed center;
+    background-size: cover;
+    margin: 0px;
+}
+
+a {
+    color: black;
+}
+
+app-add-book {
+    color: black;
+    background: whitesmoke
+}
+
+form.container.ng-untouched.ng-pristine.ng-valid {
+    background: whitesmoke;
+}
+
+
+/* 
+.table {
+    color: whitesmoke;
+}
+
+button.btn {
+    color: whitesmoke;
+} */

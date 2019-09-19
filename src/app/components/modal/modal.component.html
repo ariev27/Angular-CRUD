@@ -1,0 +1,93 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Books</h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="error pb-2"></div>
+  <form class="container">
+    <div class="form-group">
+      <label for="Book Id">BookId</label>
+      <input
+        type="text"
+        name="bookid"
+        [(ngModel)]="bookId"
+        id="bookId"
+        class="form-control"
+        [disabled]="true"
+        placeholder="Enter bookId"
+        value="{{ bookId }}"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="Title">Title</label>
+      <input
+        type="text"
+        name="title"
+        [(ngModel)]="title"
+        class="form-control"
+        id="title"
+        placeholder="Enter Title"
+        value="{{ title }}"
+      />
+    </div>
+
+    <div class=" form-group ">
+      <label for="Author ">Author</label>
+      <input
+        type="text "
+        name="author "
+        [(ngModel)]="author"
+        class="form-control "
+        id="author"
+        placeholder="Enter Author "
+        value="{{ author }}"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="Price">Price</label>
+      <input
+        type="text"
+        name="price"
+        [(ngModel)]="price"
+        class="form-control"
+        id="price"
+        placeholder="Enter Price"
+        value="{{ price }}"
+      />
+    </div>
+
+    <div class=" form-group ">
+      <label for="Stock ">Stock</label>
+      <input
+        type="text "
+        name="stock "
+        [(ngModel)]="stock"
+        class="form-control "
+        id="stock"
+        placeholder="Enter Stock "
+        value="{{ stock }}"
+      />
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-secondary"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+  <button type="button" class="btn btn-primary" (click)="updateBook()">
+    Save
+  </button>
+</div>
